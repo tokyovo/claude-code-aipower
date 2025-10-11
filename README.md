@@ -19,9 +19,9 @@ This workshop is based on key concepts from Anthropic's comprehensive training p
 ### Session 0️⃣: How Coding Assistants Work
 📁 [00-how-coding-assistants-work/](00-how-coding-assistants-work/)
 
-**Format:** 🎥 Video Presentation
-**File:** `how-coding-assistants-work.mp4`
-**Interaction:** ⏸️ Pause to explain concepts as needed
+- **Format:** 🎥 Video Presentation
+- **File:** `how-coding-assistants-work.mp4`
+- **Interaction:** ⏸️ Pause to explain concepts as needed
 
 **Topics Covered:**
 - Understanding coding assistant architecture
@@ -35,9 +35,9 @@ This workshop is based on key concepts from Anthropic's comprehensive training p
 ### Session 1️⃣: Adding Context to Claude
 📁 [01-adding-context-to-claude/](01-adding-context-to-claude/)
 
-**Format:** 🔊 Audio Presentation
-**File:** `adding-context-to-claude.m4a`
-**Interaction:** ⏸️ Pause for explanation and live demos
+- **Format:** 🔊 Audio Presentation
+- **File:** `adding-context-to-claude.m4a`
+- **Interaction:** ⏸️ Pause for explanation and live demos
 
 **Topics Covered:**
 - The `/init` command
@@ -58,9 +58,9 @@ This workshop is based on key concepts from Anthropic's comprehensive training p
 ### Session 2️⃣: Making Changes with Claude
 📁 [02-making-changes-with-claude/](02-making-changes-with-claude/)
 
-**Format:** 🔊 Audio Presentation
-**File:** `making-changes-with-claude.m4a`
-**Interaction:** ⏸️ Pause for explanation and live demos
+- **Format:** 🔊 Audio Presentation
+- **File:** `making-changes-with-claude.m4a`
+- **Interaction:** ⏸️ Pause for explanation and live demos
 
 **Topics Covered:**
 - Using screenshots for precise communication (Ctrl+V)
@@ -83,9 +83,9 @@ This workshop is based on key concepts from Anthropic's comprehensive training p
 ### Session 3️⃣: Controlling Conversation
 📁 [03-controlling-conversation/](03-controlling-conversation/)
 
-**Format:** 🔊 Audio Presentation
-**File:** `controlling-conversation.m4a`
-**Interaction:** ⏸️ Pause for explanation and live demos
+- **Format:** 🔊 Audio Presentation
+- **File:** `controlling-conversation.m4a`
+- **Interaction:** ⏸️ Pause for explanation and live demos
 
 **Topics Covered:**
 - Interrupting with Escape key
