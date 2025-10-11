@@ -104,3 +104,26 @@ This workshop is based on key concepts from Anthropic's comprehensive training p
 - Interrupting and redirecting Claude
 - Rewinding to an earlier point
 - Using `/compact` and `/clear` effectively
+
+---
+
+### Session 4️⃣: Custom Commands
+📁 [04-custom-commands/](04-custom-commands/)
+
+- **Format:** 🔊 Audio Presentation
+- **Duration:** ⏱️ 15-20 minutes
+- **File:** `custom_commands.m4a`
+- **Interaction:** ⏸️ Pause for explanation and live demos
+
+**Topics Covered:**
+- Understanding custom slash commands
+- Creating the `.claude/commands` folder structure
+- Building simple commands (audit example)
+- Using `$ARGUMENTS` for flexible commands
+- Command naming conventions
+- Restarting Claude Code to load new commands
+
+**Live Demos:**
+- Creating a custom `/audit` command
+- Building a `/write_tests` command with arguments
+- Running custom commands with different inputs
