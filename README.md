@@ -20,6 +20,7 @@ This workshop is based on key concepts from Anthropic's comprehensive training p
 📁 [00-how-coding-assistants-work/](00-how-coding-assistants-work/)
 
 - **Format:** 🎥 Video Presentation
+- **Duration:** ⏱️ 15-20 minutes
 - **File:** `how-coding-assistants-work.mp4`
 - **Interaction:** ⏸️ Pause to explain concepts as needed
 
@@ -36,6 +37,7 @@ This workshop is based on key concepts from Anthropic's comprehensive training p
 📁 [01-adding-context-to-claude/](01-adding-context-to-claude/)
 
 - **Format:** 🔊 Audio Presentation
+- **Duration:** ⏱️ 25-30 minutes
 - **File:** `adding-context-to-claude.m4a`
 - **Interaction:** ⏸️ Pause for explanation and live demos
 
@@ -59,6 +61,7 @@ This workshop is based on key concepts from Anthropic's comprehensive training p
 📁 [02-making-changes-with-claude/](02-making-changes-with-claude/)
 
 - **Format:** 🔊 Audio Presentation
+- **Duration:** ⏱️ 30-35 minutes
 - **File:** `making-changes-with-claude.m4a`
 - **Interaction:** ⏸️ Pause for explanation and live demos
 
@@ -84,6 +87,7 @@ This workshop is based on key concepts from Anthropic's comprehensive training p
 📁 [03-controlling-conversation/](03-controlling-conversation/)
 
 - **Format:** 🔊 Audio Presentation
+- **Duration:** ⏱️ 20-25 minutes
 - **File:** `controlling-conversation.m4a`
 - **Interaction:** ⏸️ Pause for explanation and live demos
 
