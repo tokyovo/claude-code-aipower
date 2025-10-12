@@ -130,6 +130,31 @@ This workshop is based on key concepts from Anthropic's comprehensive training p
 
 ---
 
+### Session 5️⃣: Model Context Protocol (MCP)
+📁 [05-model-context-protocol/](05-model-context-protocol/)
+
+- **Format:** 📝 Reading Material
+- **Duration:** ⏱️ 15-20 minutes
+- **File:** `content.md`
+- **Interaction:** 💡 Review concepts and examples
+
+**Topics Covered:**
+- Understanding Model Context Protocol (MCP)
+- How MCP solves integration complexity
+- MCP architecture and components
+- MCP Servers vs direct API calls
+- Configuring MCP in Claude Code (`.mcp.json`)
+- Popular MCP servers (Playwright, GitHub, etc.)
+- When to use MCP vs custom tools
+
+**Key Concepts:**
+- MCP shifts integration burden to specialized servers
+- Standardized protocol for tool definitions
+- Community-driven ecosystem of MCP servers
+- Rapid integration with external services
+
+---
+
 ## 🎮 Hands-On Demo Project
 
 ### 📁 [demo-project/](demo-project/)
