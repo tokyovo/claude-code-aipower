@@ -78,6 +78,7 @@ This project is structured to help you practice specific workshop concepts:
 | **Session 2: Making Changes** | Screenshots (Ctrl+V), Planning Mode, Thinking modes | `screenshots/`, All development work |
 | **Session 3: Controlling Conversation** | Escape, Rewind, `/compact`, `/clear` | Practice during any coding session |
 | **Session 4: Custom Commands** | Custom slash commands | `.claude/commands/` |
+| **Session 5: Model Context Protocol** | Playwright MCP, Browser automation, UI testing | `web/` interface, Playwright MCP tools |
 
 ---
 
@@ -326,6 +327,99 @@ Use JSDoc format for JavaScript files.
 1. Save the file
 2. Restart Claude Code (Cmd+Shift+P → "Reload Window")
 3. Run: `/document src/task.js`
+
+---
+
+### Session 5: Playwright MCP & Browser Automation
+
+#### Exercise 5A: Setup Playwright MCP
+
+**Prerequisites:**
+1. Ensure `.mcp.json` is configured in project root
+2. Start the web server: `npm start`
+3. Restart Claude Code to load MCP tools
+
+**Verification:**
+```
+Navigate to http://localhost:3000 and take a screenshot
+```
+
+Claude should open the browser and capture the TaskMaster Pro interface.
+
+#### Exercise 5B: Basic Browser Interaction
+
+**Create a task through the web UI:**
+
+```
+Use Playwright to create a task called "Learn Playwright" with high priority
+```
+
+**What happens:**
+- Claude fills the task title input
+- Selects "high" priority
+- Clicks "Add Task" button
+- Takes screenshot to verify
+
+**Goal:** Understand basic Playwright MCP tools (fill, select, click)
+
+#### Exercise 5C: Test Complete Workflow
+
+**Test user journey:**
+
+```
+Using Playwright:
+1. Create task "Write tests" with medium priority
+2. Add tags "testing" and "automation"
+3. Mark the task as complete
+4. Verify it appears in the completed filter
+```
+
+**Goal:** Chain multiple browser actions together
+
+#### Exercise 5D: Automated Testing
+
+**Test the filtering system:**
+
+```
+Create 3 tasks with different priorities, then test that each priority filter shows only the relevant tasks
+```
+
+**Expected behavior:**
+- High filter → shows only high priority tasks
+- Medium filter → shows only medium priority tasks
+- Low filter → shows only low priority tasks
+
+**Goal:** Verify application logic through automated testing
+
+#### Exercise 5E: Screenshot Debugging
+
+**Use screenshots for debugging:**
+
+```
+Create a task, then take screenshots:
+1. Before marking complete
+2. After marking complete
+3. With "Completed" filter applied
+```
+
+Compare screenshots to verify visual changes.
+
+**Goal:** Learn to use screenshots for debugging UI issues
+
+#### Exercise 5F: Generate Test Code
+
+**Record actions as test code:**
+
+```
+Start a Playwright codegen session, then manually:
+1. Create a task
+2. Filter by priority
+3. Export to JSON
+
+End the session and save the generated test
+```
+
+**Goal:** Understand test code generation from manual actions
 
 ---
 

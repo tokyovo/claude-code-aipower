@@ -321,6 +321,168 @@ curl -X DELETE http://localhost:3000/api/tasks/TASK_ID
 
 ---
 
+## 🎭 Testing with Playwright MCP
+
+### What is Playwright MCP?
+
+Playwright MCP (Model Context Protocol) allows Claude Code to control a web browser for automated testing and interaction. It's configured in the project's `.mcp.json` file and provides tools for:
+- Browser navigation and interaction
+- Taking screenshots for debugging
+- Reading page content
+- Clicking, filling forms, and more
+- Generating test code from manual actions
+
+### Prerequisites
+
+1. **MCP Configuration**: Ensure `.mcp.json` exists in project root with Playwright MCP configured
+2. **Web Server Running**: Start the server with `npm start`
+3. **Claude Code Restarted**: Restart Claude Code after adding/changing MCP configuration
+
+### Basic Playwright Commands
+
+#### Navigate and Screenshot
+```
+Navigate to http://localhost:3000 and take a screenshot
+```
+
+Claude will open the web app in a browser and capture the current state.
+
+#### Create a Task
+```
+Use Playwright to create a task "Buy milk" with high priority
+```
+
+Claude will:
+- Fill the title input field
+- Select priority from dropdown
+- Click the "Add Task" button
+- Take a screenshot to verify
+
+#### Test Filtering
+```
+Create 3 tasks with different priorities, then test that the High priority filter works correctly
+```
+
+Claude will create test data and verify the filter behavior.
+
+### Common Test Scenarios
+
+#### 1. Task Creation Workflow
+```
+Test the complete task creation workflow:
+1. Fill in task details
+2. Add tags
+3. Verify task appears in list
+4. Check statistics update
+```
+
+#### 2. Task Completion
+```
+Create a task, mark it complete, and verify:
+- Checkbox is checked
+- Task has strikethrough style
+- Statistics show 1 completed task
+```
+
+#### 3. Filter Testing
+```
+Test all filter combinations:
+- Status filters (All/Active/Completed)
+- Priority filters (All/High/Medium/Low)
+- Verify correct tasks are displayed
+```
+
+#### 4. Search Functionality
+```
+Create tasks with different titles, then test search:
+- Search for specific keywords
+- Verify only matching tasks shown
+- Test case-insensitive search
+```
+
+#### 5. Export Features
+```
+Create sample tasks and test export:
+- Click "Export JSON" button
+- Verify download is triggered
+- Check file contains correct data
+```
+
+### Screenshot Debugging
+
+Use screenshots to debug UI issues:
+
+```
+Take screenshots at each step:
+1. Before creating task
+2. After filling form
+3. After clicking submit
+4. After task appears
+```
+
+Compare screenshots to identify where issues occur.
+
+### Generating Test Code
+
+Playwright MCP can generate reusable test code:
+
+```
+Start a Playwright codegen session to record:
+1. Creating a new task
+2. Editing the task
+3. Marking it complete
+4. Deleting the task
+
+Then end the session and save the generated test file
+```
+
+The generated code will be in standard Playwright format and can be run with `npx playwright test`.
+
+### Example Test Files
+
+Check the [`playwright-tests/`](playwright-tests/) folder for example tests:
+- **example-task-creation.spec.js**: Task CRUD operations
+- **example-filtering.spec.js**: Filter and search testing
+- **example-export.spec.js**: Export functionality testing
+
+### Tips for Effective Testing
+
+1. **Start with clean state**: Refresh page between tests
+2. **Use descriptive names**: Name screenshots clearly
+3. **Verify state changes**: Check before and after actions
+4. **Test edge cases**: Empty forms, invalid input, etc.
+5. **Check statistics**: Verify counts update correctly
+
+### Troubleshooting Playwright
+
+#### Browser doesn't open
+- Verify `.mcp.json` is configured correctly
+- Restart Claude Code after configuration changes
+- Check that Playwright MCP server is running
+
+#### Elements not found
+- Inspect element in DevTools to get correct selectors
+- Use more specific CSS selectors if needed
+- Wait for page to load before interacting
+
+#### Screenshots are blank
+- Ensure page has finished loading
+- Try taking full-page screenshots
+- Check browser viewport dimensions
+
+#### Tests fail intermittently
+- Add wait times for async operations
+- Use `waitForSelector` before interactions
+- Check for network delays or slow responses
+
+### Further Reading
+
+- [Session 5: MCP Demo](../../05-model-context-protocol/demo.md)
+- [Playwright Tests README](playwright-tests/README.md)
+- [Playwright Official Docs](https://playwright.dev)
+
+---
+
 ## 🐛 Troubleshooting
 
 ### Server won't start

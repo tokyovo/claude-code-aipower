@@ -223,6 +223,107 @@ Test each command:
 
 ---
 
+## 🟣 Playwright MCP Exercises (15-25 min each)
+
+### Exercise 12: Playwright MCP Setup & Navigation
+**Topics:** MCP configuration, browser automation basics
+**Time:** 15 minutes
+
+**Prerequisites:**
+- `.mcp.json` configured with Playwright MCP
+- Web server running (`npm start`)
+- Claude Code restarted after MCP config
+
+**Tasks:**
+1. Verify Playwright MCP is loaded
+2. Ask: `Navigate to http://localhost:3000 and take a screenshot`
+3. Review the screenshot showing TaskMaster Pro interface
+4. Ask: `Get the visible text from the page`
+5. Verify page content is readable
+
+**Goal:** Understand basic Playwright MCP navigation and inspection
+
+---
+
+### Exercise 13: Automated Task Creation via UI
+**Topics:** Browser interaction, form filling
+**Time:** 20 minutes
+
+**Tasks:**
+1. Start with clean state (refresh page)
+2. Ask Claude: `Create a task "Learn MCP" with high priority using Playwright`
+3. Observe how Claude:
+   - Fills the title input field
+   - Selects priority from dropdown
+   - Clicks the "Add Task" button
+4. Take screenshot to verify task appears
+5. Create 2 more tasks with different priorities
+
+**Goal:** Master form interaction with Playwright MCP
+
+---
+
+### Exercise 14: Complete User Workflow Testing
+**Topics:** Multi-step workflows, verification
+**Time:** 25 minutes
+
+**Scenario:** Test complete task lifecycle
+
+**Tasks:**
+```
+Using Playwright:
+1. Create a task "Deploy application" with high priority
+2. Add tags "DevOps" and "Production"
+3. Mark the task as complete (click checkbox)
+4. Click "Completed" filter to show only completed tasks
+5. Take screenshot showing the completed task
+6. Verify the statistics dashboard shows 1 completed task
+```
+
+**Expected results:**
+- Task shows strikethrough text
+- Task appears in completed filter
+- Statistics update correctly
+- All screenshots show expected state
+
+**Goal:** Test end-to-end user workflows
+
+---
+
+### Exercise 15: Automated Testing & Code Generation
+**Topics:** Test automation, code generation
+**Time:** 25 minutes
+
+**Part A - Manual Testing:**
+```
+Test the priority filter system:
+1. Create 3 tasks with different priorities (high, medium, low)
+2. Click "High" priority filter
+3. Screenshot - should show only high priority task
+4. Click "Medium" priority filter
+5. Screenshot - should show only medium priority task
+6. Verify each filter works correctly
+```
+
+**Part B - Generate Test Code:**
+```
+Start a Playwright codegen session to record:
+1. Creating a new task
+2. Filtering by priority
+3. Marking task complete
+
+End the session and save the generated test file
+```
+
+**Review the generated code:**
+- Examine the CSS selectors used
+- Understand the test structure
+- Note how actions are recorded
+
+**Goal:** Learn both manual testing and test code generation
+
+---
+
 ## 🎯 Challenge Exercises (30+ min)
 
 ### Challenge 1: Complete Feature from Scratch
@@ -293,6 +394,12 @@ Share your module with the workshop!
 - [ ] Exercise 3: Running Custom Commands
 - [ ] Exercise 11: Creating Custom Commands
 
+### Session 5: Playwright MCP
+- [ ] Exercise 12: Playwright MCP Setup & Navigation
+- [ ] Exercise 13: Automated Task Creation via UI
+- [ ] Exercise 14: Complete User Workflow Testing
+- [ ] Exercise 15: Automated Testing & Code Generation
+
 ### Complete Workflows
 - [ ] Exercise 4: Running and Understanding Tests
 - [ ] Exercise 9: Building a Complete Feature
@@ -330,8 +437,11 @@ Exercises: 7 → 10 → Challenge 1
 ### Path 4: Command Creation (90 min)
 Exercises: 3 → 11 → Challenge 3
 
-### Complete Workshop (3-4 hours)
-All beginner → All intermediate → All advanced → Challenges
+### Path 5: Browser Automation (90 min)
+Exercises: 12 → 13 → 14 → 15
+
+### Complete Workshop (4-5 hours)
+All beginner → All intermediate → All advanced → Playwright MCP → Challenges
 
 ---
 
