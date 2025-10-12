@@ -133,10 +133,10 @@ This workshop is based on key concepts from Anthropic's comprehensive training p
 ### Session 5️⃣: Model Context Protocol (MCP)
 📁 [05-model-context-protocol/](05-model-context-protocol/)
 
-- **Format:** 📝 Reading Material
+- **Format:** 🔊 Audio Presentation
 - **Duration:** ⏱️ 15-20 minutes
-- **File:** `content.md`
-- **Interaction:** 💡 Review concepts and examples
+- **File:** `model_context_protocol.m4a`
+- **Interaction:** ⏸️ Pause for explanation and review diagrams
 
 **Topics Covered:**
 - Understanding Model Context Protocol (MCP)
@@ -152,6 +152,9 @@ This workshop is based on key concepts from Anthropic's comprehensive training p
 - Standardized protocol for tool definitions
 - Community-driven ecosystem of MCP servers
 - Rapid integration with external services
+
+**Visual Resources:**
+- 5 diagram images in `images/` folder illustrating MCP concepts
 
 ---
 
