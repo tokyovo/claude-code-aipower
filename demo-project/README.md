@@ -4,6 +4,8 @@
 
 **TaskMaster Pro** is a simple task management application designed specifically to demonstrate all the features and commands covered in the Claude Code Workshop. This is a hands-on learning project where you'll practice every technique from the course.
 
+> **Note**: While this demo uses Claude Code, the techniques you learn here—context management, planning, testing, and automation—are universal concepts that apply to any AI coding assistant (Cursor, GitHub Copilot, Windsurf, etc.). Focus on understanding the *principles* rather than just the tool-specific features.
+
 ### What You'll Build
 
 A full-stack task management application with:

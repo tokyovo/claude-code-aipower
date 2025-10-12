@@ -4,6 +4,26 @@
 
 Master Claude Code and integrate AI-powered assistance into your development workflow. This hands-on workshop covers essential techniques for effective collaboration with Claude.
 
+### 📖 Workshop Scope
+
+**This is a foundational workshop** covering basic concepts of AI coding assistants that apply universally across different tools:
+
+- ✅ **Applicable to all coding assistants**: While demonstrated with Claude Code, these concepts work with Cursor, Windsurf, Gemini CLI, OpenAI Codex, GitHub Copilot, and other AI coding tools
+- ✅ **Fundamental techniques**: Context management, prompting strategies, workflow integration, and best practices
+- ✅ **Practical skills**: Hands-on exercises you can apply immediately with any AI assistant
+
+### 🚀 Beyond This Workshop
+
+**Advanced topics** are available for continued learning:
+- 🎓 **Self-study**: Explore advanced features through official documentation
+- 📋 **On-demand training**: Additional sessions available based on team needs
+- 🔧 **Custom workflows**: Team-specific integrations and advanced patterns
+
+After completing this workshop, you'll have the foundation to:
+- Effectively use any AI coding assistant
+- Understand core concepts that apply across tools
+- Continue learning advanced features independently
+
 ---
 
 ## 📚 Reference Course
