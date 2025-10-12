@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskMaster Pro - Claude Code Workshop Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <h1>✅ TaskMaster Pro</h1>
+        <p class="subtitle">Claude Code Workshop Demo Project</p>
+      </div>
+      <div class="header-actions">
+        <button id="export-json-btn" class="btn btn-secondary" title="Export as JSON">
+          📥 Export JSON
+        </button>
+        <button id="export-csv-btn" class="btn btn-secondary" title="Export as CSV">
+          📥 Export CSV
+        </button>
+      </div>
+    </header>
+
+    <!-- Statistics Dashboard -->
+    <div class="stats-container" id="stats-container">
+      <div class="stat-card">
+        <div class="stat-value" id="stat-total">0</div>
+        <div class="stat-label">Total Tasks</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="stat-completed">0</div>
+        <div class="stat-label">Completed</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="stat-incomplete">0</div>
+        <div class="stat-label">Active</div>
+      </div>
+      <div class="stat-card priority-high">
+        <div class="stat-value" id="stat-high">0</div>
+        <div class="stat-label">High Priority</div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <!-- Add Task Form -->
+      <div class="add-task-form">
+        <input
+          type="text"
+          id="task-title-input"
+          class="input"
+          placeholder="What needs to be done?"
+          maxlength="200"
+        >
+        <input
+          type="text"
+          id="task-description-input"
+          class="input"
+          placeholder="Description (optional)"
+          maxlength="500"
+        >
+        <div class="form-row">
+          <select id="task-priority-select" class="select">
+            <option value="low">Low Priority</option>
+            <option value="medium" selected>Medium Priority</option>
+            <option value="high">High Priority</option>
+          </select>
+          <input
+            type="text"
+            id="task-tags-input"
+            class="input"
+            placeholder="Tags (comma-separated)"
+          >
+          <button id="add-task-btn" class="btn btn-primary">
+            ➕ Add Task
+          </button>
+        </div>
+      </div>
+
+      <!-- Filters -->
+      <div class="filters">
+        <div class="filter-group">
+          <label>Status:</label>
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <label>Priority:</label>
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-priority="all">All</button>
+            <button class="filter-btn" data-priority="high">High</button>
+            <button class="filter-btn" data-priority="medium">Medium</button>
+            <button class="filter-btn" data-priority="low">Low</button>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <label>Sort:</label>
+          <select id="sort-select" class="select">
+            <option value="createdAt-desc">Newest First</option>
+            <option value="createdAt-asc">Oldest First</option>
+            <option value="priority-desc">Priority (High to Low)</option>
+            <option value="priority-asc">Priority (Low to High)</option>
+            <option value="title-asc">Title (A-Z)</option>
+            <option value="title-desc">Title (Z-A)</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <input
+            type="text"
+            id="search-input"
+            class="input search-input"
+            placeholder="🔍 Search tasks..."
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Task List -->
+    <div class="task-list-container">
+      <div id="empty-state" class="empty-state">
+        <div class="empty-icon">📝</div>
+        <h2>No tasks yet!</h2>
+        <p>Create your first task to get started.</p>
+      </div>
+      <div id="task-list" class="task-list"></div>
+    </div>
+  </div>
+
+  <!-- Edit Task Modal -->
+  <div id="edit-modal" class="modal hidden">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Edit Task</h2>
+        <button class="modal-close" id="modal-close-btn">×</button>
+      </div>
+      <div class="modal-body">
+        <label for="edit-task-title">Title</label>
+        <input
+          type="text"
+          id="edit-task-title"
+          class="input"
+          placeholder="Task title"
+        >
+
+        <label for="edit-task-description">Description</label>
+        <textarea
+          id="edit-task-description"
+          class="textarea"
+          placeholder="Task description"
+          rows="3"
+        ></textarea>
+
+        <label for="edit-task-priority">Priority</label>
+        <select id="edit-task-priority" class="select">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+
+        <label for="edit-task-tags">Tags</label>
+        <div id="edit-task-tags" class="tags-container"></div>
+        <input
+          type="text"
+          id="edit-task-tags-input"
+          class="input"
+          placeholder="Add tag and press Enter"
+        >
+      </div>
+      <div class="modal-footer">
+        <button id="modal-cancel-btn" class="btn btn-secondary">Cancel</button>
+        <button id="modal-save-btn" class="btn btn-primary">Save Changes</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

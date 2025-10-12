@@ -1,0 +1,31 @@
+{
+  "name": "taskmaster-pro",
+  "version": "1.0.0",
+  "description": "Demo project for Claude Code Workshop - A task management application with CLI and Web interface",
+  "main": "src/taskManager.js",
+  "scripts": {
+    "test": "node tests/task.test.js",
+    "test:all": "node tests/*.test.js",
+    "start": "node web/server.js",
+    "start:web": "node web/server.js",
+    "dev": "node web/server.js"
+  },
+  "keywords": [
+    "claude-code",
+    "workshop",
+    "demo",
+    "task-management",
+    "cli",
+    "web",
+    "learning"
+  ],
+  "author": "Claude Code Workshop",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

@@ -127,3 +127,42 @@ This workshop is based on key concepts from Anthropic's comprehensive training p
 - Creating a custom `/audit` command
 - Building a `/write_tests` command with arguments
 - Running custom commands with different inputs
+
+---
+
+## 🎮 Hands-On Demo Project
+
+### 📁 [demo-project/](demo-project/)
+
+**TaskMaster Pro** - A complete, full-stack demonstration project that lets you practice every feature from the workshop!
+
+- **What it is:** A task management application with CLI and Web interfaces
+- **Purpose:** Practice all Claude Code features in a real codebase
+- **Time:** 30-60 minutes of hands-on learning
+
+**What's Included:**
+- ✅ Complete working application with tests
+- ✅ **Modern web interface** - Responsive UI with REST API
+- ✅ Custom commands (audit, review, write_tests)
+- ✅ Comprehensive CLAUDE.md for context examples
+- ✅ Step-by-step exercises for each session
+- ✅ Quick start guide for immediate practice
+
+**Quick Start - CLI:**
+1. `cd demo-project`
+2. `npm install`
+3. Open in Claude Code
+4. Run `/init`
+
+**Quick Start - Web:**
+1. `cd demo-project`
+2. `npm install`
+3. `npm start`
+4. Open http://localhost:3000
+
+**Documentation:**
+- [README.md](demo-project/README.md) - Complete exercises and scenarios
+- [WEB_INTERFACE.md](demo-project/WEB_INTERFACE.md) - Web app guide and API docs
+- [QUICK_START.md](demo-project/QUICK_START.md) - 5-minute quick start
+
+---
