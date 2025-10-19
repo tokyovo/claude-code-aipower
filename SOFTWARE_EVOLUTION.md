@@ -50,7 +50,7 @@ The Tesla example shows this isn't just theoretical - they literally replaced ha
 
 **Andrej Karpathy** - Former Tesla AI Director and OpenAI researcher who pioneered many of these concepts:
 - Website: [karpathy.ai](https://karpathy.ai/)
-- Watch his Y Combinator talk: "Software is Changing (Again)"
+- Watch his Y Combinator talk: ["Software is Changing (Again)"](https://www.youtube.com/watch?v=LCEmiRjPEtQ)
 
 ---
 
