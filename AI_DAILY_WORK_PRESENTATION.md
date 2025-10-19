@@ -105,6 +105,39 @@ Automated, recurring AI tasks that run on your behalf at specified times.
 
 ---
 
+### 7. NotebookLM: AI Research Assistant
+**Source-Grounded AI for Reliable Research**
+
+**What is NotebookLM?**
+NotebookLM is Google's AI research assistant that stands out by providing source-grounded responses. Unlike general AI tools, it doesn't fabricate or assume information—it only uses data from the resources you upload, making it highly reliable for research and analysis.
+
+**Key Features**:
+- **Multi-Format Processing**: Accepts documents, PDFs, Google Docs, slides, audio files, video transcripts, and website links
+- **Massive Capacity**: Upload up to 50 sources per notebook (approximately 25 million words)
+- **Inline Citations**: Every answer includes citations linking directly back to specific parts of your source material
+- **Automated Outputs**: Generates study guides, FAQs, timelines, and briefing documents
+- **Audio Overviews**: Experimental feature that creates podcast-style summaries of key topics
+
+**Best Use Cases**:
+- **Information Extraction**: Quickly locate specific details in dense materials (manuals, reports, documentation)
+- **Project Management**: Consolidate meeting notes and documentation to generate briefings and identify patterns
+- **Complex Analysis**: Synthesize multiple expert sources to understand trends and compare strategies
+- **Academic Research**: Analyze research papers with verifiable citations
+- **Professional Reports**: Extract insights from financial reports, market analyses, or technical documentation
+
+**Why It's Different**:
+- Prioritizes accuracy over creativity
+- All responses are grounded in your uploaded sources
+- Verification is easy with inline citations
+- No hallucinations or fabricated information
+
+**Important to Know**:
+- Best for research and analysis, not creative tasks
+- Chat outputs must be manually saved as notes
+- Quality of results depends on quality of sources uploaded
+
+---
+
 ## Conclusion
 
 **Key Takeaways**:
@@ -114,6 +147,7 @@ Automated, recurring AI tasks that run on your behalf at specified times.
 4. Deep modes unlock advanced learning and research capabilities
 5. Canvas provides collaborative, interactive workspaces
 6. Schedules automate recurring AI-assisted tasks
+7. NotebookLM offers source-grounded research with verifiable citations
 
 **Next Steps**:
 - Choose one AI tool to integrate into your daily workflow this week
