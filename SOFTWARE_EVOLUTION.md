@@ -293,9 +293,39 @@ How humans and computers work together:
 
 ## Karpathy's Perspective: "We're Programming in English Now"
 
-**The Fundamental Insight**
+### About Andrej Karpathy
 
-Andrej Karpathy, former Tesla AI Director and renowned AI researcher, delivered a groundbreaking talk with Y Combinator titled "Software is Changing (Again)." His central message is jarring in its simplicity:
+**Who He Is:**
+
+Andrej Karpathy is one of the most influential voices in artificial intelligence, bringing both deep technical expertise and exceptional teaching ability to the field.
+
+**Career Highlights:**
+
+- **Eureka Labs (2024-Present)**: Founder of AI+Education company, creating educational content on YouTube about LLMs and AI fundamentals
+- **OpenAI (2023-2024, 2015-2017)**: Founding member and research scientist. Recently returned to build a team and improve GPT-4 for ChatGPT
+- **Tesla (2017-2022)**: Senior Director of AI, led computer vision team for Tesla Autopilot, overseeing data labeling, neural network training, and deployment on custom inference chips
+- **Stanford University (2011-2015)**: PhD under Fei-Fei Li, focusing on convolutional and recurrent neural networks
+- **Stanford Teaching**: Designed and taught CS 231n (Convolutional Neural Networks for Visual Recognition), growing enrollment from 150 to 750 students
+
+**Research Focus:**
+Deep neural networks, computer vision, natural language processing, image captioning, and reinforcement learning
+
+**Why His Perspective Matters:**
+
+Karpathy has lived through all three software paradigms firsthand:
+- Software 1.0: Academic training in traditional CS and physics
+- Software 2.0: Pioneer who built and deployed neural networks at massive scale (Tesla Autopilot)
+- Software 3.0: Key contributor to GPT-4 and ChatGPT at OpenAI
+
+He's not just theorizing—he's built systems that millions use daily.
+
+**Website:** [karpathy.ai](https://karpathy.ai/)
+
+---
+
+### The Fundamental Insight
+
+Andrej Karpathy delivered a groundbreaking talk with Y Combinator titled "Software is Changing (Again)." His central message is jarring in its simplicity:
 
 > **"We're programming computers in English now. This is insane."**
 
@@ -572,22 +602,28 @@ The paradigm has shifted from writing code to having conversations. From debuggi
 
 **Key Sources:**
 
-1. **Andrej Karpathy's "Software is Changing (Again)"** - Y Combinator talk
+1. **Andrej Karpathy**
+   - Personal Website: [karpathy.ai](https://karpathy.ai/)
+   - YouTube: Educational content on LLMs and AI fundamentals
+   - Background: Stanford PhD, Tesla AI Director (2017-2022), OpenAI Founding Member
+
+2. **Andrej Karpathy's "Software is Changing (Again)"** - Y Combinator talk
    - Summarized by Mehul Gupta: [Medium Article](https://medium.com/data-science-in-your-pocket/software-is-changing-again-96b05c4af061)
    - Original concepts: LLMs as operating systems, vibe coding, AI agents as users
+   - Key insights on Software 1.0, 2.0, and 3.0 evolution
 
-2. **Andrej Karpathy's Tesla AI Work**
-   - Former Tesla AI Director
-   - Pioneer of Software 2.0 concept at Tesla Autopilot
-   - Demonstrated neural networks replacing hand-coded driving logic
+3. **Andrej Karpathy's Practical Experience**
+   - Tesla Autopilot: Demonstrated neural networks replacing hand-coded driving logic (Software 2.0)
+   - OpenAI GPT-4: Contributed to development of ChatGPT capabilities (Software 3.0)
+   - Teaching: Created CS 231n at Stanford, influential educational projects (micrograd, char-rnn)
 
-3. **Current AI Coding Platforms:**
+4. **Current AI Coding Platforms:**
    - ChatGPT (OpenAI)
    - Claude (Anthropic)
    - GitHub Copilot
    - Cursor, Windsurf (AI-first IDEs)
 
-4. **Model Repositories:**
+5. **Model Repositories:**
    - GitHub: Traditional Software 1.0 code
    - Hugging Face: Software 2.0 models and datasets
 
