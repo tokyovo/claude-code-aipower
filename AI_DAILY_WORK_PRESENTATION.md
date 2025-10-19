@@ -43,7 +43,7 @@
 
 ---
 
-### 4. Deep Research, Study, and Learn Modes
+### 4. Deep Research and Study & Learn Modes
 **Advanced AI Capabilities for Knowledge Work**
 
 **Deep Research Mode**:
@@ -51,18 +51,17 @@
 - Synthesis of complex information
 - Citation and reference management
 - Multi-angle analysis of subjects
+- In-depth investigation with verifiable sources
 
-**Study Mode**:
-- Personalized learning paths
+**Study & Learn Mode**:
+- Personalized learning paths tailored to your level
 - Concept explanation at various complexity levels
-- Practice problem generation
-- Knowledge gap identification
-
-**Learn Mode**:
 - Interactive tutorials and walkthroughs
+- Practice problem generation
 - Step-by-step skill building
 - Adaptive difficulty based on progress
 - Real-time feedback and corrections
+- Knowledge gap identification
 
 ---
 
