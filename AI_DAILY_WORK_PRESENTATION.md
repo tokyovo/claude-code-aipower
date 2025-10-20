@@ -11,6 +11,8 @@
 - The learning curve is smaller than you think - start small, build gradually
 - Resistance to AI adoption may lead to being left behind in efficiency and innovation
 
+> **📝 Presenter Note**: After establishing the right mindset, present the content from [`LLM_CHATGPT_TOKENS_EXPLAINED.md`](./LLM_CHATGPT_TOKENS_EXPLAINED.md) to provide foundational understanding of LLMs, ChatGPT, and tokens before diving into practical applications.
+
 ---
 
 ### 2. Demo: AI Agent Mode (Running in Background)
